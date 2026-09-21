@@ -1,0 +1,23 @@
+{
+  "name": "arc-1-readonly",
+  "type": "stdio",
+  "command": "npx",
+  "args": ["arc-1@latest"],
+  "env": {
+    "SAP_URL": "https://e69.sap.porsche.biz",
+    "SAP_CLIENT": "100",
+    "SAP_LANGUAGE": "DE",
+    "SAP_SYSTEM_TYPE": "onprem",
+    "SAP_ABAP_RELEASE": "758",
+    "NODE_EXTRA_CA_CERTS": "<HOME>/.config/opencode/certs/e69-chain.pem",
+    "SAP_COOKIE_FILE": "<HOME>/.config/opencode/certs/e69.cookies",
+    "SAP_DISABLE_SAML": "true",
+    "SAP_ALLOW_WRITES": "false",
+    "SAP_ALLOW_TRANSPORT_WRITES": "false",
+    "SAP_ALLOW_DATA_PREVIEW": "false",
+    "SAP_ALLOW_FREE_SQL": "false",
+    "SAP_ALLOW_GIT_WRITES": "false",
+    "SAP_DENY_ACTIONS": "SAPWrite.*,SAPActivate.*,SAPTransport.*",
+    "ARC1_LOG_LEVEL": "info"
+  }
+}

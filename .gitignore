@@ -1,0 +1,24 @@
+.DS_Store
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.pem
+*.key
+*.cookies
+*cookie*
+
+# Local MCP and tool state
+mcp.json
+mcp.local.json
+.opencode/
+.vscode/mcp.json
+
+# Runtime output and local environments
+*.log
+node_modules/
+venv/
+.cache/

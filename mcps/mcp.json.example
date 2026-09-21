@@ -1,0 +1,32 @@
+{
+  "servers": {
+    "porsche-jira": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp"
+    },
+    "porsche-confluence": {
+      "type": "http",
+      "url": "http://127.0.0.1:8001/mcp"
+    },
+    "porsche-glossary": {
+      "type": "http",
+      "url": "http://127.0.0.1:8002/mcp"
+    },
+    "sap-docs": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["<MCP_SAP_DOCS_DIR>/dist/src/server.js"],
+      "cwd": "<MCP_SAP_DOCS_DIR>",
+      "env": {
+        "MCP_VARIANT": "sap-docs"
+      }
+    },
+    "sap-notes": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["<SAP_MCP_SERVERS_DIR>/packages/notes/dist/mcp-server.js"],
+      "cwd": "<SAP_MCP_SERVERS_DIR>/packages/notes",
+      "envFile": "<SAP_MCP_SERVERS_DIR>/packages/notes/.env"
+    }
+  }
+}
