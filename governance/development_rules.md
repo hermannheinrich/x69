@@ -1,8 +1,10 @@
 # Development Rules
 
-Diese Regeln gelten für alle Developer-Agents und SAP-Entwicklungsaufgaben im
-E69-Kontext. Bei einem Konflikt mit einer konkreten Ticketanforderung muss der
-Konflikt vor der Implementierung geklärt werden.
+Diese Regeln gelten für ABAP-/CDS-/RAP-/Fiori-Entwicklung und SAP-Repository-
+Aufgaben im E69-Kontext. Sie gelten nicht für SAP Integration-Suite-Artefakte;
+dafür ist `governance/integration_developer_rules.md` maßgeblich. Bei einem
+Konflikt mit einer konkreten Ticketanforderung muss der Konflikt vor der
+Implementierung geklärt werden.
 
 ## SAP-Verbindung
 
@@ -86,6 +88,7 @@ ABAP sind einzuhalten:
   | `requirements-analyst` | `requirements.md` und fachliche BA-Dokumentation | technische Ticketdateien, SAP, Governance |
   | `process-analyst` | fachliche Prozessdokumentation | technische Implementierung, SAP-Schreibzugriffe, Governance |
   | `ba-researcher` | nichts | alle Dateien, SAP-Schreibzugriffe, Jira-/Confluence-Schreibzugriffe |
+  | `integration-developer` | technische Integration-Suite-Dateien und technische Ticketdateien | `requirements.md`, Governance, SAP-Schreibzugriffe, Aktivierungen, Transporte |
 
 - `implementation/tickets/<TICKET-ID>/requirements.md` ist ein fachliches
   Anforderungsartefakt und für Developer-Agents schreibgeschützt.

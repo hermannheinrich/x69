@@ -11,12 +11,13 @@ Agents.
 
 - `developer/` — technische Entwicklung, insbesondere ABAP, CDS, RAP und Fiori
 - `business_analyst/` — fachliche Analyse und Anforderungsarbeit
+- `integration_developer/` — Entwicklung auf der SAP Integration Suite
 - `product_management/` — Produktsteuerung, Priorisierung und Roadmaps
 - `implementation/` — gemeinsame Umsetzungsartefakte und Workflows
 
 Die Developer-Agents liegen unter `developer/agents/` und werden beim
-Developer-Onboarding mit eingerichtet. Die Agents für Business Analysis und
-Product Management werden später ergänzt.
+Developer-Onboarding mit eingerichtet. BA- und Integration-Developer-Agents
+werden über ihre jeweiligen Onboardings eingerichtet.
 
 ## Einstieg
 
@@ -25,10 +26,12 @@ Product Management werden später ergänzt.
 3. Als Developer `developer/setup.md` vollständig ausführen; das installiert
 	die Developer-Agents und richtet die MCPs ein.
 4. Als Business Analyst `business_analyst/setup.md` vollständig ausführen.
-5. `governance/README.md` und `governance/project_context.md` lesen.
-6. `governance/project_workflow.md` für Status, Übergaben und Ticketphasen
+5. Als Integration Developer `integration_developer/setup.md` vollständig
+	ausführen.
+6. `governance/README.md` und `governance/project_context.md` lesen.
+7. `governance/project_workflow.md` für Status, Übergaben und Ticketphasen
 	beachten.
-7. Nur lokale `.env`-Dateien verwenden und niemals Zugangsdaten committen.
+8. Nur lokale `.env`-Dateien verwenden und niemals Zugangsdaten committen.
 
 ## MCPs
 
@@ -43,6 +46,7 @@ Die gemeinsamen MCP-Setup-Vorlagen liegen unter `mcps/`:
 ARC-1 ist bewusst nicht Teil der gemeinsamen Konfiguration. Developer nutzen
 ARC-1 mit den erforderlichen Schreibrechten; Business Analysts können die
 separate read-only Vorlage unter `business_analyst/` für SAP-Recherche nutzen.
+Integration Developer können dieselbe read-only Vorlage für SAP-Kontext nutzen.
 
 Die Vorlagen enthalten keine produktiven Tokens, Passwörter, Cookies oder
 Zertifikate. Jeder Nutzer muss seine lokalen Werte selbst eintragen.
@@ -62,6 +66,6 @@ Zertifikate. Jeder Nutzer muss seine lokalen Werte selbst eintragen.
 
 ## Status
 
-Die Repository-Struktur, das gemeinsame MCP-Onboarding sowie Developer- und
-Business-Analyst-Onboarding sind die erste Ausbaustufe. Product-Management-
-Agents folgen in einem separaten Schritt.
+Die Repository-Struktur, das gemeinsame MCP-Onboarding sowie Developer-,
+Business-Analyst- und Integration-Developer-Onboarding sind die erste
+Ausbaustufe. Product-Management-Agents folgen in einem separaten Schritt.

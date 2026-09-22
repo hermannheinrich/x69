@@ -10,8 +10,10 @@ hierher.
 - GitHub-Repository: `hermannheinrich/x69`
 - Gemeinsame Ticketablage: `implementation/tickets/<TICKET-ID>/`
 - Developer-Onboarding: `developer/setup.md`
+- Integration-Developer-Onboarding: `integration_developer/setup.md`
 - Gemeinsame MCP-Vorlagen: `mcps/`
 - Verbindliche Regeln: `governance/development_rules.md`
+- Integration-Suite-Regeln: `governance/integration_developer_rules.md`
 
 ## SAP E69
 
@@ -20,7 +22,8 @@ hierher.
 - Mandant: `100`
 - Sprache: `DE`
 - ABAP-Release: `758`
-- SAP-Zugriff: ARC-1 read-only für Business Analysts, read/write für Developer
+- SAP-Zugriff: ARC-1 read-only für Business Analysts und Integration Developer,
+  read/write für Developer
 - Erlaubte Custom-Pakete für ARC-1: `Y*`, `$TMP`
 - Transportfreigaben durch Agents: verboten
 
@@ -43,6 +46,10 @@ hierher.
 - PAT-Portal: `https://skyway.porsche.com/jira/plugins/servlet/desk/portal/1/create/9141`
 
 PATs werden ausschließlich lokal in `.env`-Dateien verwaltet.
+
+Die SAP Integration Suite ist aktuell nicht als eigener MCP in diesem
+Repository konfiguriert. Der Plattformzugriff erfolgt über die projektseitig
+bereitgestellten Werkzeuge und Prozesse.
 
 ## Copilot
 
